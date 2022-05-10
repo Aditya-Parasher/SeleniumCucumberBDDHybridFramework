@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 10, 2022 01:43:17 am</span></a>
+<a href="#"><span class="badge badge-primary">May 10, 2022 02:26:41 pm</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 10, 2022 01:43:17 am</h3>
+<h3>May 10, 2022 02:26:41 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 10, 2022 01:43:57 am</h3>
+<h3>May 10, 2022 02:27:09 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login page feature":39.665,"Account Page Feature":34.045
+"Login page feature":26.406,"Account Page Feature":26.367
 };
 </script>
 <div class="row">
@@ -263,7 +263,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Login page feature</p>
             <p class="text-sm">
-              <span>01:43:18 am</span> / <span>00:00:39:665</span>
+              <span>14:26:42 pm</span> / <span>00:00:26:406</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -272,9 +272,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Login page feature</h5>
-<span class='badge badge-success'>05.10.2022 01:43:18</span>
-<span class='badge badge-danger'>05.10.2022 01:43:57</span>
-<span class='badge badge-default'>00:00:39:665</span>
+<span class='badge badge-success'>05.10.2022 14:26:42</span>
+<span class='badge badge-danger'>05.10.2022 14:27:09</span>
+<span class='badge badge-default'>00:00:26:406</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -284,43 +284,17 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Login page title</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Forgot Password link</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.loginSteps.user_is_on_login_page()">
+              <div class="step pass-bg" title="Parallel.loginSteps.user_is_on_login_page()">
                 <span>Given user is on login page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.loginSteps.user_gets_the_title_of_the_page()">
-                <span>When user gets the title of the page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.loginSteps.page_title_should_be(java.lang.String)">
-                <span>Then page title should be "Login - My Store"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Forgot Password link</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.loginSteps.user_is_on_login_page()">
-                <span>Given user is on login page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefinitions.loginSteps.forgot_your_password_link_should_be_displayed()">
+              <div class="step pass-bg" title="Parallel.loginSteps.forgot_your_password_link_should_be_displayed()">
                 <span>Then forgot your password link should be displayed</span>
       <div>
       </div>
@@ -331,37 +305,63 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Login with correct credentials</div>
+        <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Login page title</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.loginSteps.user_is_on_login_page()">
+              <div class="step pass-bg" title="Parallel.loginSteps.user_is_on_login_page()">
                 <span>Given user is on login page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.loginSteps.user_enters_username(java.lang.String)">
+              <div class="step pass-bg" title="Parallel.loginSteps.user_gets_the_title_of_the_page()">
+                <span>When user gets the title of the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.loginSteps.page_title_should_be(java.lang.String)">
+                <span>Then page title should be "Login - My Store"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Login with correct credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Parallel.loginSteps.user_is_on_login_page()">
+                <span>Given user is on login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Parallel.loginSteps.user_enters_username(java.lang.String)">
                 <span>When user enters username "parasheradi94@gmail.com"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.loginSteps.user_enters_password(java.lang.String)">
+              <div class="step pass-bg" title="Parallel.loginSteps.user_enters_password(java.lang.String)">
                 <span>And user enters password "Adish@2019"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.loginSteps.user_clicks_on_login_button()">
+              <div class="step pass-bg" title="Parallel.loginSteps.user_clicks_on_login_button()">
                 <span>And user clicks on Login button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.loginSteps.user_gets_the_title_of_the_page()">
+              <div class="step pass-bg" title="Parallel.loginSteps.user_gets_the_title_of_the_page()">
                 <span>Then user gets the title of the page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.loginSteps.page_title_should_be(java.lang.String)">
+              <div class="step pass-bg" title="Parallel.loginSteps.page_title_should_be(java.lang.String)">
                 <span>And page title should be "My account - My Store"</span>
       <div>
       </div>
@@ -372,14 +372,14 @@ eventsCount: 5,
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="pass" test-id="5"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Account Page Feature</p>
             <p class="text-sm">
-              <span>01:43:18 am</span> / <span>00:00:34:045</span>
+              <span>14:26:43 pm</span> / <span>00:00:26:367</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -388,10 +388,10 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Account Page Feature</h5>
-<span class='badge badge-success'>05.10.2022 01:43:18</span>
-<span class='badge badge-danger'>05.10.2022 01:43:52</span>
-<span class='badge badge-default'>00:00:34:045</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-success'>05.10.2022 14:26:43</span>
+<span class='badge badge-danger'>05.10.2022 14:27:09</span>
+<span class='badge badge-default'>00:00:26:367</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -400,29 +400,29 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Accounts page title</div>
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Accounts page title</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.AccountPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
+              <div class="step pass-bg" title="Parallel.AccountPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
                 <span>Given user has already logged in to application</span>
       <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>parasheradi94@gmail.com</td><td>Adish@2019</td></tr></table>
       </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.AccountPageSteps.user_is_on_accounts_page()">
+              <div class="step pass-bg" title="Parallel.AccountPageSteps.user_is_on_accounts_page()">
                 <span>Given user is on Accounts page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.loginSteps.user_gets_the_title_of_the_page()">
+              <div class="step pass-bg" title="Parallel.loginSteps.user_gets_the_title_of_the_page()">
                 <span>When user gets the title of the page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.loginSteps.page_title_should_be(java.lang.String)">
+              <div class="step pass-bg" title="Parallel.loginSteps.page_title_should_be(java.lang.String)">
                 <span>Then page title should be "My account - My Store"</span>
       <div>
       </div>
@@ -433,31 +433,31 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>Accounts section count</div>
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Accounts section count</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.AccountPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
+              <div class="step pass-bg" title="Parallel.AccountPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
                 <span>Given user has already logged in to application</span>
       <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>parasheradi94@gmail.com</td><td>Adish@2019</td></tr></table>
       </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.AccountPageSteps.user_is_on_accounts_page()">
+              <div class="step pass-bg" title="Parallel.AccountPageSteps.user_is_on_accounts_page()">
                 <span>Given user is on Accounts page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.AccountPageSteps.user_gets_accounts_section(io.cucumber.datatable.DataTable)">
+              <div class="step pass-bg" title="Parallel.AccountPageSteps.user_gets_accounts_section(io.cucumber.datatable.DataTable)">
                 <span>Then user gets accounts section</span>
       <div><table class='markup-table table '><tr><td>ORDER HISTORY AND DETAILS</td></tr><tr><td>MY CREDIT SLIPS</td></tr><tr><td>MY ADDRESSES</td></tr><tr><td>MY PERSONAL INFORMATION</td></tr><tr><td>MY WISHLISTS</td></tr></table>
       </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.AccountPageSteps.accounts_section_count_should_be(java.lang.Integer)">
+              <div class="step pass-bg" title="Parallel.AccountPageSteps.accounts_section_count_should_be(java.lang.Integer)">
                 <span>And accounts section count should be 5</span>
       <div>
       </div>
@@ -509,9 +509,9 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>01:43:18 am</td>
+<td>14:26:43 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='4'>Accounts page title</a>
+<a href="#" class="linked" test-id='5' id='6'>Accounts page title</a>
 <div class="">
 <span class="badge badge-default">Account Page Feature.Accounts page title</span>
 </div>
@@ -519,9 +519,9 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>01:43:37 am</td>
+<td>14:26:43 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='24'>Accounts section count</a>
+<a href="#" class="linked" test-id='5' id='7'>Accounts section count</a>
 <div class="">
 <span class="badge badge-default">Account Page Feature.Accounts section count</span>
 </div>
