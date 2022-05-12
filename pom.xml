@@ -24,6 +24,14 @@
 
 	<dependencies>
 
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+
+
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
@@ -133,11 +141,13 @@
 						<goals>
 							<goal>integration-test</goal>
 						</goals>
-						<configuration> <!--UNCOMMENT - To add any exclusions if required-->
+						<configuration>
+							<!--UNCOMMENT - To add any exclusions if required-->
 							<!--<excludes>
 								<exclude>**/*IT*.java</exclude>
 							</excludes>-->
-							<includes> <!--UNCOMMENT BELOW LINE 
+							<includes>
+								<!--UNCOMMENT BELOW LINE 
 				- To execute feature files with a single runner -->
 								<include>**/MyTestRunner.java</include>
 								<!--UNCOMMENT BELOW LINE - To execute feature files with multiple runners 

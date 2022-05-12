@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 11, 2022 04:54:51 pm</span></a>
+<a href="#"><span class="badge badge-primary">May 13, 2022 12:26:39 am</span></a>
 </li>
 </ul>
 </div>
@@ -57,11 +57,6 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
-</a>
-</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -71,25 +66,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 11, 2022 04:54:51 pm</h3>
+<h3>May 13, 2022 12:26:39 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 11, 2022 04:55:18 pm</h3>
+<h3>May 13, 2022 12:27:24 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -105,12 +100,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'>
-<b>1</b> features passed
+<div><small data-tooltip='100%'>
+<b>2</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='50%'><b>1</b> features failed,
+<small data-tooltip='0%'><b>0</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -128,9 +123,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='80%'><b>4</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>4</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='20%'><b>1</b> scenarios failed,
+<small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,9 +143,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='95%'><b>19</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>15</b> steps passed</small></div>
 <div>
-<small data-tooltip='5%'><b>1</b> steps failed,
+<small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -167,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login page feature":24.775,"Account Page Feature":25.651
+"Login page feature":42.774,"Account Page Feature":44.058
 };
 </script>
 <div class="row">
@@ -179,10 +174,18 @@ var timeline = {
 <tr>
 <td>@accounts</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Regression</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>50%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -219,19 +222,19 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 1,
+passParent: 2,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
 passChild: 4,
-failChild: 1,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 19,
-failGrandChild: 1,
+passGrandChild: 15,
+failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
@@ -248,7 +251,6 @@ eventsCount: 5,
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -256,7 +258,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@accounts</a>
+<a class="dropdown-item" href="#">@accounts</a><a class="dropdown-item" href="#">@Regression</a>
 </ul>
 </li>
 </ul>
@@ -269,7 +271,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Login page feature</p>
             <p class="text-sm">
-              <span>16:54:52 pm</span> / <span>00:00:24:775</span>
+              <span>00:26:40 am</span> / <span>00:00:42:774</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -278,9 +280,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Login page feature</h5>
-<span class='badge badge-success'>05.11.2022 16:54:52</span>
-<span class='badge badge-danger'>05.11.2022 16:55:17</span>
-<span class='badge badge-default'>00:00:24:775</span>
+<span class='badge badge-success'>05.13.2022 00:26:40</span>
+<span class='badge badge-danger'>05.13.2022 00:27:23</span>
+<span class='badge badge-default'>00:00:42:774</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -337,7 +339,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Login with correct credentials</div>
+        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>Login with correct credentials</div>
       </div>
     </div>
         <div class="collapse">
@@ -378,26 +380,26 @@ eventsCount: 5,
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="4"
+        <li class="test-item"  status="pass" test-id="5"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Account Page Feature</p>
             <p class="text-sm">
-              <span>16:54:52 pm</span> / <span>00:00:25:651</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>00:26:40 am</span> / <span>00:00:44:058</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Account Page Feature</h5>
-<span class='badge badge-success'>05.11.2022 16:54:52</span>
-<span class='badge badge-danger'>05.11.2022 16:55:18</span>
-<span class='badge badge-default'>00:00:25:651</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<h5 class="test-status text-pass">Account Page Feature</h5>
+<span class='badge badge-success'>05.13.2022 00:26:40</span>
+<span class='badge badge-danger'>05.13.2022 00:27:24</span>
+<span class='badge badge-default'>00:00:44:058</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -406,7 +408,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="5"><span class="badge log pass-bg mr-2">Pass</span>Accounts page title</div>
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>Accounts page title</div>
       </div>
     </div>
         <div class="collapse">
@@ -436,63 +438,6 @@ eventsCount: 5,
           </div>
         </div>
   </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="10"><span class="badge log fail-bg mr-2">Fail</span>Accounts section count</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step pass-bg" title="Parallel.AccountPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
-                <span>Given user has already logged in to application</span>
-      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>parasheradi94@gmail.com</td><td>Adish@2019</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.AccountPageSteps.user_is_on_accounts_page()">
-                <span>Given user is on Accounts page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Parallel.AccountPageSteps.user_gets_accounts_section(io.cucumber.datatable.DataTable)">
-                <span>Then user gets accounts section</span>
-      <div><table class='markup-table table '><tr><td>ORDER HISTORY AND DETAILS</td></tr><tr><td>MY CREDIT SLIPS</td></tr><tr><td>MY ADDRESSES</td></tr><tr><td>MY PERSONAL INFORMATION</td></tr><tr><td>MY WISHLISTS</td></tr></table>
-      </div>
-      <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="Parallel.AccountPageSteps.accounts_section_count_should_be(java.lang.Integer)">
-                <span>And accounts section count should be 7</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at Parallel.AccountPageSteps.accounts_section_count_should_be(AccountPageSteps.java:46)
-	at ?.accounts section count should be 7(file:///C:/Users/ADITYA%20PARASHER/eclipse-workspace/CucumberPOMHybrid/src/test/resources/Parallel/accountPage.feature:23)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>Parallel.applicationHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>Accounts_section_count
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../embedded1.png' src="../embedded1.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
 </div>
           </div>
         </li>
@@ -509,7 +454,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -517,16 +462,14 @@ eventsCount: 5,
 <div class="test-detail">
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
-<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@accounts</p>
-<p class="duration text-sm">2 tests</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>@accounts</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -539,21 +482,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>16:54:52 pm</td>
+<td>00:26:40 am</td>
 <td>
-<a href="#" class="linked" test-id='4' id='5'>Accounts page title</a>
+<a href="#" class="linked" test-id='5' id='6'>Accounts page title</a>
 <div class="">
 <span class="badge badge-default">Account Page Feature.Accounts page title</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>16:54:52 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='10'>Accounts section count</a>
-<div class="">
-<span class="badge badge-default">Account Page Feature.Accounts section count</span>
 </div>
 </td>
 </tr>
@@ -561,34 +494,18 @@ eventsCount: 5,
 </table>
 </div>
 </li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
+<p class="name">@Regression</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -599,13 +516,13 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>16:55:17 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:26:40 am</td>
 <td>
-<a href="#" class="linked" test-id='4' id='44'>And accounts section count should be 7</a>
+<a href="#" class="linked" test-id='5' id='6'>Accounts page title</a>
 <div class="">
-<span class="badge badge-default">Account Page Feature.Accounts section count.And accounts section count should be 7</span>
+<span class="badge badge-default">Account Page Feature.Accounts page title</span>
 </div>
 </td>
 </tr>
