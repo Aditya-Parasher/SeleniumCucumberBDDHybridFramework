@@ -6,12 +6,14 @@ Given user has already logged in to application
 |parasheradi94@gmail.com|Adish@2019|
 
 @accounts
+@Regression
 Scenario: Accounts page title
 Given user is on Accounts page 
 When user gets the title of the page
 Then page title should be "My account - My Store"
 
 @accounts
+@Smoke @Regression
 Scenario: Accounts section count
 Given user is on Accounts page
 Then user gets accounts section
@@ -20,4 +22,4 @@ Then user gets accounts section
 |MY ADDRESSES|
 |MY PERSONAL INFORMATION|
 |MY WISHLISTS|
-And accounts section count should be 5
+And accounts section count should be 7

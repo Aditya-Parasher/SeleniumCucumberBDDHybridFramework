@@ -13,8 +13,10 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 		features = {"src/test/resources/Parallel"},
 		glue = {"Parallel"},
 		plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-				"timeline:test-output-thread/"},
-		dryRun = false,		
+				"timeline:test-output-thread/", 
+				"rerun:target/failRerun.txt"},
+		dryRun = false,	
+		tags = "not @Smoke",
 		monochrome=true
 		)
 
