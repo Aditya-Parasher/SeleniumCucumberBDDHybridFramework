@@ -15,21 +15,15 @@
 		<junit.version>4.13.1</junit.version>
 		<cucumber.version>6.9.0</cucumber.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.6</maven.compiler.source>
-		<maven.compiler.target>1.6</maven.compiler.target>
-		<maven.compiler.version>3.8.1</maven.compiler.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.version>3.7.0</maven.compiler.version>
 		<maven.surefire.version>2.22.2</maven.surefire.version>
 	</properties>
 
 
-	<dependencies>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-		<dependency>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-compiler-plugin</artifactId>
-			<version>3.8.1</version>
-		</dependency>
+	<dependencies>
 
 
 		<dependency>
@@ -105,6 +99,7 @@
 
 
 	<build>
+<pluginManagement>
 		<plugins>
 
 
@@ -168,5 +163,6 @@
 
 
 		</plugins>
+</pluginManagement>
 	</build>
 </project>
